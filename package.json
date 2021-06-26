@@ -1,0 +1,17 @@
+{
+  "name": "machine-test",
+  "version": "1.0.0",
+  "description": "machine test for interviewer",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start-prod": "node index.js"
+  },
+  "author": "yogiraj",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7"
+  }
+}
