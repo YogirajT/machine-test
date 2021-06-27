@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
         const result = await fetch(`${env.host}:${env.port || ''}/records`)
         const data = await result.json();
         const pageNo = req?.query?.page || 0;
-        var { pageItems, numberOfPages, previousPage, nextPage } = getPagination(pageNo, data);
+        const { pageItems, numberOfPages, previousPage, nextPage } = getPagination(pageNo, data);
         const ids = [];
         const open = [];
         let closedCount = 0;
